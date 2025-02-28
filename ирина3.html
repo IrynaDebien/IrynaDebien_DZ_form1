@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Debien Iryna">
+        <meta name="description" content="урок №">
+        <title>Мой сайт</title>
+        <link rel="stylesheet" href="ирина3.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <form name="форма1">
+                    <div class="radio-item">
+                        <label class="radio-label">
+                            <input type="radio" id="radio1" name="переключатель" value="1" />Добавить элемент в конец списка
+                        </label>
+                        <input type="text" id="textInput1" name="текстВвод1" placeholder="Введите текст" class="text-input" disabled />
+                    </div>
+                    <div class="radio-item">
+                        <label class="radio-label">
+                            <input type="radio" id="radio2" name="переключатель" value="2" />Вставить элемент списка
+                        </label>
+                        <input type="text" id="textInput2" name="текстВвод2" placeholder="Введите текст" class="text-input" disabled />
+                    </div>
+                    <div class="radio-item">
+                        <label class="radio-label">
+                            <input type="radio" id="radio3" name="переключатель" value="3" />Изменить текст элемента списка
+                        </label>
+                        <input type="text" id="textInput3" name="текстВвод3" placeholder="Введите текст" class="text-input" disabled />
+                    </div>
+                    <div class="radio-item">
+                        <label class="radio-label">
+                            <input type="radio" id="radio4" name="переключатель" value="4" />Добавить вложенный список
+                        </label>
+                        <input type="text" id="textInput4" name="текстВвод4" placeholder="Введите текст" class="text-input" disabled />
+                    </div>
+                    <div class="radio-item">
+                        <label class="radio-label">
+                            <input type="radio" id="radio5" name="переключатель" value="5" />Удалить элемент списка
+                        </label>
+                    </div>
+                    <input type="submit" value="Выполнить" onclick="выбрать(event)">
+                </form>
+            </div>
+            <div class="списокВывод" contenteditable="true"></div> 
+        </div>
+        <script src="ирина3.js"></script>
+    </body>
+</html>
